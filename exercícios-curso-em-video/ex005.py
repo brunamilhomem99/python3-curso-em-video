@@ -3,11 +3,5 @@
 # getting input from user
 value = int(input('Digite um número inteiro: '))
 
-# calculating the successor
-successor = value + 1
-
-# calculating the predecessor
-predecessor = value - 1
-
 # printing the result
-print(f'O sucessor é {successor} e o antecessor é {predecessor}')
+print(f'O sucessor é {value+1} e o antecessor é {value-1}')
