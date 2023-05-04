@@ -7,4 +7,5 @@
 nome = str(input('Digite seu nome completo: '))
 no_space = nome.replace(" ", "")
 first_name = nome.split()
-print(f'Em maiúsculo: {nome.upper()}\nEm minúsculo: {nome.lower()}\nPossui {len(no_space)} letras\nPossui {len(first_name[0])} letras no primeiro nome')
+print(f'Em maiúsculo: {nome.upper()}\nEm minúsculo: {nome.lower()}\nPossui {len(no_space)} letras\n'
+      f'Possui {len(first_name[0])} letras no primeiro nome')
