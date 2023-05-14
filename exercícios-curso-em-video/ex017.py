@@ -4,4 +4,4 @@ from math import hypot
 cat_oposto = float(input('Digite o valor do cateto oposto do triângulo: '))
 cat_adj = float(input('Agora do cateto adjacente: '))
 hip = hypot(cat_oposto, cat_adj)
-print('O valor da Hipotenusa é {:.2f}'.format(hip))
+print('O valor da Hipotenusa é \033[31m{:.2f}\033[m'.format(hip))
