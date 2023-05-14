@@ -4,4 +4,4 @@
 km = int(input('Km percorridos: '))
 d = float(input('Quantidade de dias do aluguel: '))
 preço = (d * 60) + (km * 0.15)
-print(f'O total do aluguel do carro, levando em conta os {km}Km percorridos será R${preço}')
+print(f'O total do aluguel do carro, levando em conta os \033[30m{km}Km\033[m percorridos será \033[34mR${preço}\033[m')
