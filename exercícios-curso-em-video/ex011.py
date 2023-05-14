@@ -10,7 +10,7 @@ area = altura * largura
 # quantidade delitros necessários para a area calculada
 L = area / 2
 
-print(f'Para pintar sua parede de {area}m² serão necessários {L} litros de tinta!')
+print(f'Para pintar sua parede de \033[33m{area}m²\033[m serão necessários \033[33m{L} litros\033[m de tinta!')
 
 
 
