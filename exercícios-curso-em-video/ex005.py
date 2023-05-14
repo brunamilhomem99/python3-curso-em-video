@@ -4,4 +4,4 @@
 value = int(input('Digite um número inteiro: '))
 
 # printing the result
-print(f'O sucessor é {value+1} e o antecessor é {value-1}')
+print(f'O \033[1msucessor\033[m é \033[31m{value+1}\033[m e o \033[1mantecessor\033[m é \033[31m{value-1}\033[m')
