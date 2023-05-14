@@ -3,4 +3,4 @@
 money = float(input('Quantos reais você tem na carteira? R$'))
 
 # cotação do dolar
-print(f'Com R${money} você pode comprar US${money*5} dólares!')
+print(f'Com \033[32mR${money}\033[m você pode comprar \033[32mUS${money*5}\033[m dólares!')
