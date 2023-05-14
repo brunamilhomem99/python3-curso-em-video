@@ -1,9 +1,9 @@
 # Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada
 
-value = int(input('Digite um número para ver sua tabuada: '))
+value = int(input('\033[35mDigite um número para ver sua tabuada: \033[m'))
 multiplier = 10
 
-print('-' * 12)
+print('\033[36m-\033[m' * 12)
 print(f'{value} x {1} = {value*1}')
 print(f'{value} x {2} = {value*2}')
 print(f'{value} x {3} = {value*3}')
@@ -15,4 +15,4 @@ print(f'{value} x {8} = {value*8}')
 print(f'{value} x {9} = {value*9}')
 print(f'{value} x {9} = {value*9}')
 print(f'{value} x {10} = {value*10}')
-print('-' * 12)
+print('\033[36m-\033[m' * 12)
