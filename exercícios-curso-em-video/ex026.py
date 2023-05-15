@@ -8,4 +8,4 @@ count = f.count('A')
 string = f.replace(" ", "")    # tirando os espaços para que só as letras sejam levadas em conta
 find = string.find('A')+1
 rfind = string.rfind('A')+1
-print(f'A letra A aparece {count} vezes, aparece pela primeira vez na posição de índice {find} e aparece pela última vez na poisção {rfind}')
+print(f'A letra A aparece \033[31m{count}\033[m vezes, aparece pela primeira vez na posição de índice \033[31m{find}\033[m e aparece pela última vez na posição \033[31m{rfind}\033[m')
