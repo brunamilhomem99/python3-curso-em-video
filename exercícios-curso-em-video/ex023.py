@@ -6,4 +6,4 @@ u = num // 1 % 10
 d = num // 10 % 10
 c = num // 100 % 10
 m = num // 1000 % 10
-print(f'Unidade: {u}\nDezena: {d}\nCentena: {c}\nMilhar: {m}')
+print(f'Unidade: \033[33m{u}\033[m\nDezena: \033[33m{d}\033[m\nCentena: \033[33m{c}\033[m\nMilhar: \033[33m{m}\033[m')
