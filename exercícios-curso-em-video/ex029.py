@@ -3,6 +3,6 @@
 
 v = float(input('Qual a velocidade do carro em km/h? '))
 if v > 80:
-    print('Você ultrapassou o limite de 80Km/h. Sinto informar que receberá uma multa de R${:.2f}'.format((v - 80) * 7))
+    print('Você ultrapassou o limite de 80Km/h. Sinto informar que receberá uma multa de \033[33mR${:.2f}\033[m'.format((v - 80) * 7))
 else:
-    print('Ótimo, você esta dentro dos limites de velocidade, continue assim!')
+    print('\033[34mÓtimo, você esta dentro dos limites de velocidade, continue assim!\033[m')
