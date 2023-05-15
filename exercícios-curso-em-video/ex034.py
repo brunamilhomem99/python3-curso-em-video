@@ -6,6 +6,6 @@ s = float(input('Qual o valor do seu salário? R$'))
 superior = s + (s * 10/100)
 inferior = s + (s * 15/100)
 if s > 1250:
-    print('Considerando o valor dado você terá um aumento de 10%, passando a receber R${:.2f}'.format(superior))
+    print('Considerando o valor dado você terá um aumento de \033[4m10%\033[m, passando a receber \033[32mR${:.2f}\033[m'.format(superior))
 elif s <= 1250:
-    print('Considerando o valor dado você terá um aumento de 15%, passando a receber R${:.2f}.'.format(inferior))
+    print('Considerando o valor dado você terá um aumento de \033[4m15%\033[m, passando a receber \033[32mR${:.2f}\033[m.'.format(inferior))
