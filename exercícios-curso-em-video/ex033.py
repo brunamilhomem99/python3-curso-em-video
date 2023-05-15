@@ -17,4 +17,4 @@ if b > a and b > c:
     maior = b
 if c > a and c > b:
     maior = c
-print(f'Maior valor: {maior}\nMenor valor: {menor}')
+print(f'\033[33mMaior valor:\033[m {maior}\n\033[34mMenor valor:\033[m {menor}')
