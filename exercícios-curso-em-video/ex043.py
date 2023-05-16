@@ -6,11 +6,12 @@
 # 30 até 40: Obesidade
 # Acima de 40: Obesidade mórbida
 
-p = float(input('Qual o seu peso? '))
-a = float(input('Qual a sua altura? '))
+p = float(input('Qual é o seu peso? (Kg) '))
+a = float(input('Qual é a sua altura? (m) '))
 imc = p / (a ** 2)
 if imc < 18.5:
     print('\033[31mAbaixo do peso\033[m')
+    print(imc)
 elif 18.5 <= imc < 25:
     print('\033[32mPeso ideal\033[m')
 elif 25 <= imc < 30:
