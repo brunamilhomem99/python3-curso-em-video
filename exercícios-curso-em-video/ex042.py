@@ -9,9 +9,13 @@ print('\033[35m-=-\033[m' * 15)
 r1 = float(input('Primeiro valor de reta: '))
 r2 = float(input('Segundo valor de reta: '))
 r3 = float(input('Terceiro valor de reta: '))
-if r1 == r2 == r3:
-    print('Triângulo \033[36mEQUILÁTERO\033[m')
-elif r1 == r2 or r1 == r3 or r2 == r3:
-    print('Triângulo \033[36mISÓCELES\033[m')
-elif r1 != r2 != r3:
-    print('Triângulo \033[36mESCALENO\033[m')
+if r1 < r2+ r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('Com os valores dados pode-se formar um triângulo', end=' ')
+    if r1 == r2 == r3:
+        print('\033[36mEQUILÁTERO\033[m')
+    elif r1 == r2 or r1 == r3 or r2 == r3:
+        print('\033[36mISÓCELES\033[m')
+    else:
+        print('\033[36mESCALENO\033[m')
+else: 
+    print('Os valores não são suficientes para formar um triângulo.')
