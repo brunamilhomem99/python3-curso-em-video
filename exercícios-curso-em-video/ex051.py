@@ -3,6 +3,6 @@
 
 p = int(input('Digite o primeiro termo da PA: '))
 r = int(input('Digite a razão da PA: '))
-
-termos = [p + i * r for i in range(10)]
-print(termos)
+dec = p + (10 - 1) * r
+for i in range(p, dec + r, r):
+    print(f'{i}', end=' ')
