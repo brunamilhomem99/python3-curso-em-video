@@ -3,10 +3,13 @@
 
 from datetime import date
 ano_atual = date.today().year
+totmenor = 0
+totmaior = 0
 for i in range(1, 8):
     ano = int(input(f'Data de nascimento {i}: '))
     idade = ano_atual - ano
-    if idade > 21:
-        print('Maior de Idade')
+    if idade >= 21:
+        totmaior += 1
     else:
-        print('Menor de idade')
+        totmenor += 1
+print(f'Ao todo tivemos {totmaior} pessoas maiores de idade e {totmenor} pessoas menores.')
