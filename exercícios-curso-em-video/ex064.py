@@ -2,14 +2,10 @@
 # o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles
 # (desconsiderando o flag)
 
-qtd_num = {}
-c = 1
-while c == 1:
-    n = int(input('Digite um número inteiro: '))
-    if n == 999:
-        if n in qtd_num:
-            qtd_num[n] += 1
-        else:
-            qtd_num[n] = 1
-        break
-print(qtd_num)
+cont = soma = num = 0
+num = int(input('Digite um número inteiro [999 para parar]: '))
+while num != 999:
+    soma += num
+    cont += 1
+    num  = int(input('Digite um número inteiro [999 para parar]: '))
+print(f'Você digitou {cont} números e a soma entre eles foi {soma}')
