@@ -6,9 +6,11 @@
 # D) quantas pessoas não binárias foram cadastradas. [BÔNUS]
 
 from time import sleep
+
 maioridade = homens = mulheres20 = nao_binario = 0
 while True:
     idade = int(input('Idade: '))
+
     gen = ' '
     while gen not in 'FMNB':
         gen = str(input('Gênero [F / M / NB]: ')).strip().upper()
@@ -27,8 +29,10 @@ while True:
         opc_continuar = str(input('Quer continuar [S / N]? ')).strip().upper()[0]
     if opc_continuar == 'N':
         break
+
 print('COLETANDO ESTATÍSTICA. . .')
 sleep(2)
+
 print(f'Total de pessoas com mais de de 18 anos: {maioridade}')
 print(f'Total de homens cadastrados: {homens}')
 print(f'Total de mulheres com menos de 20 anos: {mulheres20}')
