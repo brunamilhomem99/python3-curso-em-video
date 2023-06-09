@@ -5,6 +5,7 @@
 # C) qual é o nome do produto mais barato.
 
 from time import sleep
+
 total_gasto = protudos1000 = mais_barato = cont = 0
 mais_barato_nome = ' '
 while True:
@@ -25,8 +26,10 @@ while True:
 
     if opc_continuar == 'N':
         break
+
 print('CALCULANDO...')
 sleep(2)
+
 print(f'Total gasto na compra: R${total_gasto:.2f}')
 print(f'Total de produtos que custam mais de R$1000,00: {protudos1000}')
 print(f'Produto mais barato: {mais_barato_nome}, custando R${mais_barato}')
