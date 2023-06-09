@@ -11,6 +11,7 @@ while True:
     user_num = int(input('Digite um número: '))
     pc_num = randint(0, 50)
     total = pc_num + user_num
+
     user_guess = ' '
     while user_guess not in 'PI':
         user_guess = str(input('Escolha entre PAR ou ÌMPAR [I/P]: ')).strip().upper()[0]
@@ -22,6 +23,7 @@ while True:
             wins += 1
         else:
             break
+        
     elif user_guess == 'I':
         if user_num % 2 != 0:
             print('PARABÉNS! Você venceu!')
