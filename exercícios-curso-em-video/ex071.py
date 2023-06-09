@@ -14,6 +14,7 @@ while True:
     if total >= ced:
         total -= ced
         total_ced += 1
+        
     else:
         if total_ced > 0:
             print(f'Total de {total_ced} cédulas de R${ced}')
