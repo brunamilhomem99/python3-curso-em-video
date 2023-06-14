@@ -1,18 +1,19 @@
 # Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços, na sequência.
 # No final, mostre uma listagem de preços, organizando os dados de forma tabular.
 
+blue = '\033[34m'
+reset = '\033[m'
+
 produtos = ('Cardeno', '35,00', 'Caneta esferográfica', '2,00', 'Marca-texto', '3,50', 'Borracha', '1,50', 'Apontador',
             '2,50', 'Agenda', '15,99')
 
-print('-' * 30)
-print('CATÁLOGO DE MATERIAIS ESCOLARES')
-print('-' * 30)
+print('-' * 37)
+print(f'{blue}CATÁLOGO DE MATERIAIS ESCOLARES{reset}')
+print('-' * 37)
 
-print(f'''
-{produtos[0]}{'.' * 20} R${produtos[1]}
-{produtos[2]}{'.' * 20} R${produtos[3]}
-{produtos[4]}{'.'* 20} R${produtos[5]}
-{produtos[6]}{'.' * 20} R${produtos[7]}
-{produtos[8]}{'.' * 20} R${produtos[9]}
-{produtos[10]}{'.' * 20} R${produtos[11]}
-''')
+for pos in range(0, len(produtos)):
+    if pos % 2 == 0:
+        print(f'{produtos[pos]:.<30}', end='')
+    else: 
+        print(f'R${produtos[pos]:.>5}')
+print('-' * 37)
