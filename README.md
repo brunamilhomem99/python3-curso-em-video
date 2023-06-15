@@ -1,3 +1,4 @@
-# python3-curso-em-video
- Curso de Python 3 - _Mundo 1: Fundamentos_
- 🖖 [playlist gratuita](https://youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6)
+# Curso em Vídeo - Python 3
+ - [Mundo 1](https://www.cursoemvideo.com/curso/python-3-mundo-3/): _Fundamentos_
+ - [Mundo 2](https://www.cursoemvideo.com/curso/python-3-mundo-3/): _Estruturas de Controle_
+ - [Mundo 3](https://www.cursoemvideo.com/curso/python-3-mundo-3/): _Estrutras Compostas_
